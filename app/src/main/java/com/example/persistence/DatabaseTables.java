@@ -11,15 +11,15 @@ class DatabaseTables {
 
     }
 
-    static final String SQL_CREATE_TABLE_MOUNTAIN =
-            // "CREATE TABLE mountain (id INTEGER PRIMARY KEY, name TEXT, height INT)"
+    static final String SQL_CREATE_TABLE_BONSAI =
+            // "CREATE TABLE bonsai (id INTEGER PRIMARY KEY, name TEXT, height INT)"
             "CREATE TABLE " + Bonsai.TABLE_NAME + " (" +
                     Bonsai.COLUMN_NAME_ID + " INTEGER PRIMARY KEY," +
                     Bonsai.COLUMN_NAME_NAME + " TEXT," +
                     Bonsai.COLUMN_NAME_AGE + " INT)";
 
-    static final String SQL_DELETE_TABLE_MOUNTAIN =
-            // "DROP TABLE IF EXISTS mountain"
+    static final String SQL_DELETE_TABLE_BONSAI =
+            // "DROP TABLE IF EXISTS bonsai"
             "DROP TABLE IF EXISTS " + Bonsai.TABLE_NAME;
 
 }
