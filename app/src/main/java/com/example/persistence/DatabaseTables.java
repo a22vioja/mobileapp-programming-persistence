@@ -2,6 +2,7 @@ package com.example.persistence;
 
 class DatabaseTables {
 
+
     static class Bonsai {
 
         static final String TABLE_NAME = "bonsai";
@@ -9,6 +10,8 @@ class DatabaseTables {
         static final String COLUMN_NAME_NAME = "name";
         static final String COLUMN_NAME_AGE = "age";
 
+        public Bonsai(long aLong, String string, int anInt) {
+        }
     }
 
     static final String SQL_CREATE_TABLE_BONSAI =

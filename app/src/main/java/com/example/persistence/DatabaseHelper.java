@@ -6,12 +6,14 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
+
     private static final int DATABASE_VERSION = 1; // If this is incremented onUpgrade() will be executed
     private static final String DATABASE_NAME = "Bonsai.db"; // The file name of our database
 
     DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
+
 
     // This method is executed only if there is not already a database in the file `Bonsai.db`
     @Override
